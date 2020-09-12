@@ -1,0 +1,22 @@
+$width-md: 500px;
+$width-lg: 1000px;
+$height-sm: 400px;
+$height-md: 401px;
+$height-lg: 600px;
+
+@mixin media($media) {
+    @if $media == xs {
+      @media (max-width: $breakpoint-sm) { @content; }
+    }
+    @else if $media == sm {
+      @media (max-width: $width-md) and (max-height: $height-sm) { @content; }
+    }
+    @else if $media == md {
+      @media (min-width: $width-md) and (min-height: $height-md) { @content; }
+    }
+    @else if $media == lg {
+      @media (min-width: $width-lg) and (min-height: $height-lg) { @content; }
+    }
+  }
+
+  
