@@ -13,7 +13,7 @@ import * as actions from "./store/actions/index"
 function App(props) {
   useEffect(()=>{
     props.onTryAutoSignups()
-  },[])
+  },[props])
 
   let routes = (
     <Switch>
