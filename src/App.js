@@ -45,7 +45,7 @@ function App(props) {
   }
   return (
     <div >
-      <BrowserRouter>
+      <BrowserRouter basename="/QuimSalinas/burger-app">
         <Layout>
           <Suspense fallback={<p>loading...</p>}>{routes}</Suspense>
         </Layout>
