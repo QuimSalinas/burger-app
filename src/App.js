@@ -1,33 +1,33 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, Suspense} from 'react';
 import Layout from "./hoc/Layout/Layout"
 import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder"
 import {BrowserRouter, Switch, Route, Redirect} from "react-router-dom"
 import Logout from "./containers/Auth/Logout/Logout"
 import { connect } from "react-redux"
 import * as actions from "./store/actions/index"
-import asyncComponent from './hoc/asyncComponent/asyncComponent';
 
-const asyncCheckout = asyncComponent(() => {
+const Checkout = React.lazy(() => {
   return import("./containers/Checkout/Checkout")
 })
 
-const asyncOrders = asyncComponent(() => {
+const Orders = React.lazy(() => {
   return import("./containers/Orders/Orders")
 })
 
-const asyncAuth = asyncComponent(() => {
+const Auth = React.lazy(() => {
   return import("./containers/Auth/Auth")
 })
 
 function App(props) {
+  const {onTryAutoSignups} = props;
   useEffect(()=>{
     props.onTryAutoSignups()
-  },[props])
+  },[onTryAutoSignups])
 
   let routes = (
     <Switch>
       <Route path="/" exact component={BurgerBuilder} />
-      <Route path="/auth" component={asyncAuth} />
+      <Route path="/auth" component={Auth} />
       <Redirect to="/" />
     </Switch>
   );
@@ -35,9 +35,9 @@ function App(props) {
     routes = (
       <Switch>
         <Route path="/" exact component={BurgerBuilder} />
-        <Route path="/checkout" component={asyncCheckout} />
-        <Route path="/auth" component={asyncAuth} />
-        <Route path="/orders" component={asyncOrders} />
+        <Route path="/checkout" component={Checkout} />
+        <Route path="/auth" component={Auth} />
+        <Route path="/orders" component={Orders} />
         <Route path="/logout" component={Logout} />
         <Redirect to="/" />
       </Switch>
@@ -47,7 +47,7 @@ function App(props) {
     <div >
       <BrowserRouter>
         <Layout>
-          {routes}
+          <Suspense fallback={<p>loading...</p>}>{routes}</Suspense>
         </Layout>
       </BrowserRouter>
     </div>
