@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b53bd9f376ba21efddff5d76a272b1d8",
+    "revision": "f8ec1bead5ade4210e978faa6224075d",
     "url": "/QuimSalinas/burger-app/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/QuimSalinas/burger-app/static/css/5.29466d00.chunk.css"
   },
   {
-    "revision": "d69dcb573b6d170a2b61",
-    "url": "/QuimSalinas/burger-app/static/css/main.dbb8b59a.chunk.css"
+    "revision": "d414624b7600ce08ccd8",
+    "url": "/QuimSalinas/burger-app/static/css/main.e896392c.chunk.css"
   },
   {
     "revision": "1b08b4bb3619aae4c5d1",
@@ -40,7 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/QuimSalinas/burger-app/static/js/5.46eb24e1.chunk.js"
   },
   {
-    "revision": "d69dcb573b6d170a2b61",
+    "revision": "d414624b7600ce08ccd8",
     "url": "/QuimSalinas/burger-app/static/js/main.4ab218b3.chunk.js"
   },
   {

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/QuimSalinas/burger-app/static/css/main.dbb8b59a.chunk.css",
+    "main.css": "/QuimSalinas/burger-app/static/css/main.e896392c.chunk.css",
     "main.js": "/QuimSalinas/burger-app/static/js/main.4ab218b3.chunk.js",
     "main.js.map": "/QuimSalinas/burger-app/static/js/main.4ab218b3.chunk.js.map",
     "runtime-main.js": "/QuimSalinas/burger-app/static/js/runtime-main.aa57f2d9.js",
@@ -17,19 +17,19 @@
     "static/js/5.46eb24e1.chunk.js": "/QuimSalinas/burger-app/static/js/5.46eb24e1.chunk.js",
     "static/js/5.46eb24e1.chunk.js.map": "/QuimSalinas/burger-app/static/js/5.46eb24e1.chunk.js.map",
     "index.html": "/QuimSalinas/burger-app/index.html",
-    "precache-manifest.ed7e6ee1e3c1b7784934a66668c35b6a.js": "/QuimSalinas/burger-app/precache-manifest.ed7e6ee1e3c1b7784934a66668c35b6a.js",
+    "precache-manifest.fb7d1b983e59b86347292765b10f42d1.js": "/QuimSalinas/burger-app/precache-manifest.fb7d1b983e59b86347292765b10f42d1.js",
     "service-worker.js": "/QuimSalinas/burger-app/service-worker.js",
     "static/css/3.627d732b.chunk.css.map": "/QuimSalinas/burger-app/static/css/3.627d732b.chunk.css.map",
     "static/css/4.98737583.chunk.css.map": "/QuimSalinas/burger-app/static/css/4.98737583.chunk.css.map",
     "static/css/5.29466d00.chunk.css.map": "/QuimSalinas/burger-app/static/css/5.29466d00.chunk.css.map",
-    "static/css/main.dbb8b59a.chunk.css.map": "/QuimSalinas/burger-app/static/css/main.dbb8b59a.chunk.css.map",
+    "static/css/main.e896392c.chunk.css.map": "/QuimSalinas/burger-app/static/css/main.e896392c.chunk.css.map",
     "static/js/2.773fc4f2.chunk.js.LICENSE.txt": "/QuimSalinas/burger-app/static/js/2.773fc4f2.chunk.js.LICENSE.txt",
     "static/media/burger-logo.png": "/QuimSalinas/burger-app/static/media/burger-logo.b8503d26.png"
   },
   "entrypoints": [
     "static/js/runtime-main.aa57f2d9.js",
     "static/js/2.773fc4f2.chunk.js",
-    "static/css/main.dbb8b59a.chunk.css",
+    "static/css/main.e896392c.chunk.css",
     "static/js/main.4ab218b3.chunk.js"
   ]
 }
